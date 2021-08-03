@@ -28,14 +28,23 @@ print('Comenzamos a ponernos serios!')
 # Empezar aquí la resolución del ejercicio
 
 # inicio = ....
+inicio = int(input("Ingrese el numero inicial de la secuencia\n"))
+
 # fin = ....
-
+fin = int(input("Ingrese el numero final de la secuencia\n"))
 # cantidad_numeros ....
+cantidad_numeros = 0 
 # sumatoria ....
-
+sumatoria = 0
 # bucle.....
 
+for i in range(inicio,fin+1):
+    cantidad_numeros += 1
+    sumatoria += i
+    
+promedio = 0
 # Al terminar el bucle calcular el promedio como:
 # promedio = sumatoria / cantidad_numeros
-
+promedio = sumatoria / cantidad_numeros
 # Imprimir resultado en pantalla
+print(" El promedio es: {}".format(promedio))
